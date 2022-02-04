@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Project</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="main__body">
+    <main>
+      <section class="section__signIn">
+        <div class="header">
+          <div class="header__logo">
+            <img src="./img/logo.svg" alt="logo" />
+          </div>
+          <div class="header__close">
+            <img src="./img/close.svg" alt="close" />
+            <p>close</p>
+          </div>
+        </div>
+        <div class="form__body sighIn__form">
+          <div class="form__body-item form__item-left">
+            <h2 class="form__title">Sign in</h2>
+          </div>
+          <div class="form__body-item form__item-right">
+            <form action="" class="form__signIn">
+              <div class="signInEmail-box">
+                <input
+                  class="form__input form__email"
+                  type="text"
+                  placeholder="E-mail *"
+                  required
+                />
+                <p class="error error-email">Incorect email</p>
+              </div>
+
+              <div class="form__password-input">
+                <div>
+                  <input
+                    class="form__input form__password"
+                    type="text"
+                    placeholder="Password *"
+                    required
+                  />
+                  <p class="error error-password">Incorect password</p>
+                </div>
+
+                <button class="form__passShow-btn" type="">
+                  <img src="./img/icon-eye.svg" alt="icon-eye" />
+                </button>
+              </div>
+              <div class="form__links">
+                <a href="" class="form__link link__reset" type=""
+                  >Reset password</a
+                >
+                <a href="" class="form__link link__create" type=""
+                  >Create an account</a
+                >
+              </div>
+              <button class="button__send">Send</button>
+              <label class="checkbox__item">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  value="value2"
+                  class="checkbox__input"
+                />
+                <span class="fake"></span>
+                <span class="fake__span">Remember me</span>
+              </label>
+            </form>
+          </div>
+        </div>
+
+        <div class="form__body reset__form">
+          <div class="form__body-item form__item-left">
+            <h2 class="form__title">Reset</h2>
+          </div>
+          <div class="form__body-item form__item-right">
+            <form class="form__signIn form__sighIn-reset">
+              <div class="form__reset-box">
+                <input
+                  class="form__input form__email email-reset"
+                  type="text"
+                  placeholder="E-mail *"
+                  required
+                />
+                <p class="error error-reset">
+                  There is no user with this e-mail in our community
+                </p>
+                <p class="form__reset-text">
+                  Enter your e-mail adress to recover your login information and
+                  reset your password
+                </p>
+              </div>
+
+              <button class="button__send reset__send-btn">Send</button>
+            </form>
+            <div class="reset__success">
+              <div>
+                <img
+                  class="success__icon"
+                  src="./img/checkbox.svg"
+                  alt="icon"
+                />
+              </div>
+              <div>
+                <p class="success__text">
+                  New login and password have been sent to e-mail qwerty@qq.ii
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="footer__btn footer__share">
+            <img src="./img/share.svg" alt="share-icon" />
+          </button>
+          <button class="footer__btn footer__message">
+            <img src="./img/message.svg" alt="message-icon" />
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="./js/scripts.min.js"></script>
+</html>

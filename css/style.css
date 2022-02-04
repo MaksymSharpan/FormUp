@@ -140,6 +140,7 @@ body.locked {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  cursor: pointer;
 }
 
 .header__close p {

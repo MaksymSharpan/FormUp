@@ -17,6 +17,8 @@ const resetSuccess = document.querySelector('.reset__success');
 const resetSendButton = document.querySelector('.reset__send-btn');
 const formSignInReset = document.querySelector('.form__sighIn-reset');
 
+const passShowBtn = document.querySelector('.form__passShow-btn');
+
 resetSendButton.disabled = true;
 inputEmailReset.addEventListener('input', e => {
   if (!e.target.value) {
@@ -64,5 +66,14 @@ resetSendButton.addEventListener('click', e => {
 });
 formSignInReset.addEventListener('submit', e => {
   e.preventDefault();
+});
+
+passShowBtn.addEventListener('click', e => {
+  passShowBtn.classList.toggle('clicked');
+  if (passShowBtn.classList.contains('clicked')) {
+    inputPassword.setAttribute('type', 'text');
+  } else {
+    inputPassword.setAttribute('type', 'password');
+  }
 });
 

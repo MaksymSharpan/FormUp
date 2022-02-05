@@ -182,6 +182,7 @@ body.locked {
   font-weight: 600;
   font-size: 48px;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
 }
 
 .form__signIn {
@@ -501,6 +502,7 @@ body.locked {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    overflow: scroll;
   }
 
   .header {
@@ -528,6 +530,7 @@ body.locked {
             flex-direction: column;
     padding: 0 24px;
     max-width: 100%;
+    gap: 0;
   }
 
   .form__item-left {
@@ -544,6 +547,9 @@ body.locked {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 0px;
+    font-weight: 900;
+    line-height: 48px;
     font-size: 32px;
   }
 
